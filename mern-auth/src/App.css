@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+i {
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	width: 52%;
+	padding: 10px;
+	margin: 10px;
+	background: #6cafa4;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: transparent;
+	border: 2px solid #6cafa4;
+	color: #6cafa4;
+}
+
+:root {
+	--primary-color: #17a2b8;
+	--dark-color: #343a40;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #28a745;
+}
+
+.alert {
+	padding: 0.8rem;
+	margin: 1rem 0;
+	opacity: 0.9;
+	background: var(--light-color);
+	color: #333;
+}
+
+.alert-primary {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+.alert-light {
+	background: var(--light-color);
+	color: #333;
+}
+
+.alert-dark {
+	background: var(--dark-color);
+	color: #fff;
+}
+
+.alert-danger {
+	background: var(--danger-color);
+	color: #fff;
+}
+
+.alert-success {
+	background: var(--success-color);
+	color: #fff;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.7rem 2rem;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	opacity: 0.9;
+	background: #6cafa4;
+}
+
+.navbar .nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.navbar a {
+	color: #fff;
+	padding: 1rem;
+	margin: 0 1rem;
+}
+
+.navbar .welcome span {
+	margin-right: 0.6rem;
+}
+
+/* Landing Page */
+.landing {
+	position: relative;
+	background: url("./img/landing.jpg") no-repeat center 80% / cover;
+	height: 100vh;
+}
+
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.landing-inner {
+	color: #fff;
+	height: 60%;
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.landing-inner h1 {
+	font-size: 60px;
+}
+.landing-inner p {
+	font-size: 18px;
+	max-width: 60%;
+}
+
+.landing-inner .buttons {
+	margin-top: 1rem;
+}
+
+.register-form,
+.login-form {
+	width: 80%;
+	text-align: center;
+	margin: 6rem auto;
+	justify-content: center;
+}
+
+.form input {
+	width: 50%;
+	padding: 10px;
+	margin: 10px;
+}
+
+.lead {
+	font-size: 25px;
+}
+
+.heading {
+	font-size: 40px;
+}
+
+.link a {
+	color: #6cafa4;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+	/* Navbar */
+	.navbar {
+		display: block;
+		text-align: center;
+	}
+
+	.navbar ul {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.navbar h1 {
+		margin-bottom: 1rem;
+	}
+
+	.navbar .welcome {
+		display: none;
+	}
+}
