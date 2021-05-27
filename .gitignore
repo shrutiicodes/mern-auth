@@ -10,7 +10,7 @@ node_modules/
 /coverage
 
 # production
-/build
+/mern-auth/build
 
 # misc
 .DS_Store
